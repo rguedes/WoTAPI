@@ -6,7 +6,7 @@
  * Time: 14:02
  */
 
-namespace riftbit\wotapi\lib\tools;
+namespace RiftBit\WoTAPI\lib\tools;
 use GuzzleHttp\Client;
 
 class Request {
