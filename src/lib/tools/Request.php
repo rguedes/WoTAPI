@@ -15,7 +15,7 @@ class Request {
     {
         $client = new Client();
         $response = $client->post($url, ['body' => $params]);
-        return $response;
+        return $response->json();
     }
 
 }

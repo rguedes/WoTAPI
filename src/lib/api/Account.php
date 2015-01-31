@@ -11,7 +11,17 @@ use RiftBit\WoTAPI\lib\tools\Request;
 
 class Account {
 
-    public static function acc_list($application_id, $api_url, $language, $fields, $type, $search, $limit)
+    /**
+     * @param $application_id
+     * @param $api_url
+     * @param $language
+     * @param $fields
+     * @param string $type exact or startswith
+     * @param $search
+     * @param $limit
+     * @return mixed
+     */
+    public static function acc_list($application_id, $api_url, $language, $fields, $type="exact", $search, $limit)
     {
         $request_params = [
             'application_id' => $application_id,

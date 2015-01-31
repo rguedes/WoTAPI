@@ -44,4 +44,14 @@ class Api {
         return lib\api\Account::acc_achievements($this->_application_id, $this->_base_wot_api_url, $this->_application_language, $fields, $access_token, $account_id);
     }
 
+    public function clanList($fields, $search, $limit, $order_by, $page_no)
+    {
+        return lib\api\Clan::clan_list($this->_application_id, $this->_base_wot_api_url, $this->_application_language, $fields, $search, $limit, $order_by, $page_no);
+    }
+
+    public function clanInfo($fields, $access_token, $clan_id)
+    {
+        return lib\api\Clan::clan_info($this->_application_id, $this->_base_wot_api_url, $this->_application_language, $fields, $access_token, $clan_id);
+    }
+
 }
