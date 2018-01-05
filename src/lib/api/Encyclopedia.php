@@ -11,11 +11,12 @@ use RiftBit\WoTAPI\lib\tools\Request;
 
 class Encyclopedia {
 
-    public static function vehicles($application_id, $api_url, $language, $limit, $nation, $page_no, $tier, $type, $tank_id)
+    public static function vehicles($application_id, $api_url, $language, $fields, $limit, $nation, $page_no, $tier, $type, $tank_id)
     {
         $request_params = [
             'application_id' => $application_id,
             'language' => $language,
+            'fields' => $fields,
             'limit' => $limit,
             'nation' => $nation,
             'tank_id' => $tank_id,
