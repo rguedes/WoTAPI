@@ -58,7 +58,7 @@ class Api {
         return lib\api\Tanks::tanks_stats($this->_application_id, $this->_base_wot_api_url, $this->_application_language, $account_id, $tank_id, $access_token, $fields, $extra, $in_garage );
     }
 
-    public function encyclopediaVehicles($limit=100, $tier="", $nation="", $type="", $page_no=1, $tank_id=""){
+    public function encyclopediaVehicles($tier="", $nation="", $type="",  $tank_id="", $page_no=1, $limit=100){
         return lib\api\vehicles::vehicles($this->_application_id, $this->_base_wot_api_url, $this->_application_language, $limit, $nation, $page_no, $tier, $type, $tank_id);
     }
 
