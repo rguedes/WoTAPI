@@ -35,6 +35,6 @@ class Clan {
             'access_token' => $access_token,
             'clan_id' => $clan_id
         ];
-        return Request::send($api_url."wgn/clan/info/", $request_params);
+        return Request::send($api_url."wgn/clans/info/", $request_params);
     }
 }
